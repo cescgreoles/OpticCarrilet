@@ -1,0 +1,14 @@
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-button {
+  margin: 0 10px;
+}
