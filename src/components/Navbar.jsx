@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-        <div className="logo">ÓPTICA CARRILET</div>
+        <div className="logo">//\\</div>
         <div className={`menu ${isMenuOpen ? "open" : ""}`}>
           <ul>
             <li>

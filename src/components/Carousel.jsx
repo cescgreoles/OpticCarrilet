@@ -1,30 +1,50 @@
-import React, { useState } from "react";
-import "../styles/Carousel.scss"; // Create a separate CSS file for styling (optional)
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.scss";
+import "slick-carousel/slick/slick-theme.scss";
+import "../styles/Carousel.scss";
+import lentillas1 from "../assets/lentillas1.jpeg";
+import gafasol from "../assets/gafasol.webp";
 
-const Carousel = ({ items }) => {
-  const [currentItem, setCurrentItem] = useState(0);
-
-  const nextItem = () => {
-    setCurrentItem((prevItem) =>
-      prevItem === items.length - 1 ? 0 : prevItem + 1
-    );
-  };
-
-  const prevItem = () => {
-    setCurrentItem((prevItem) =>
-      prevItem === 0 ? items.length - 1 : prevItem - 1
-    );
+const Carousel = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000, // Adjust as needed
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="carousel">
-      <button className="carousel-button" onClick={prevItem}>
-        Previous
-      </button>
-      <div className="carousel-item">{items[currentItem]}</div>
-      <button className="carousel-button" onClick={nextItem}>
-        Next
-      </button>
+    <div className="carousel-container">
+      <Slider {...settings}>
+        {/* Your slide components go here */}
+        <div>
+          <img src={lentillas1} alt="loading..." className="gafas-img" />
+        </div>
+        <div>
+          <img src={gafasol} alt="loading..." className="gafas-img" />
+        </div>
+        {/* Add more slides as needed */}
+      </Slider>
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
-import gafas from "../assets/ulleres.avif";
+import opticaCarrilet from "../assets/opticaCarrilet.png";
 import "../styles/GifGafas.scss";
 
 const GifGafas = () => {
   return (
     <div className="gafas">
-      <img src={gafas} alt="loading..." className="gafas-img" />
+      <img src={opticaCarrilet} alt="loading..." className="img-gif" />
     </div>
   );
 };

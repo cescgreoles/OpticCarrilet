@@ -1,9 +1,9 @@
 .gafas {
-  width: 100%;
-  height: auto;
+  width: 100%; // Opcional: define el ancho del contenedor según tus necesidades
+  height: auto; // El alto será determinado por el padding-bottom en función de la relación de aspecto de la imagen
 }
 
-.gafas-img {
-  width: 50%;
-  height: auto;
+.img-gif {
+  width: 100%; // Ocupa todo el ancho disponible
+  height: auto; // Ocupa todo el alto disponible
 }
