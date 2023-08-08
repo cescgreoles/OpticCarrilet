@@ -2,14 +2,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 10px;
+}
+
+.logoUlleres {
+  width: 60px; /* Ajusta el tamaño según tus necesidades */
+  filter: hue-rotate(180deg);
 }
 
 .logo {
   font-size: 25px;
   font-weight: bold;
+  color: black;
 }
 
 .menu {
@@ -29,9 +35,9 @@
 
 .menu a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 13px;
 }
 
 .menu-icon {
@@ -43,6 +49,7 @@
 @media screen and (max-width: 768px) {
   .menu {
     display: none;
+    background-color: white;
   }
 
   .menu.open {

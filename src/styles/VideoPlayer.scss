@@ -1,0 +1,9 @@
+.videoControl {
+  padding-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .videoControl {
+    display: none;
+  }
+}

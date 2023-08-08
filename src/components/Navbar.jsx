@@ -1,4 +1,5 @@
 import "../styles/NavbarStyles.scss";
+import logoUlleres from "../assets/logoUlleres.png";
 
 import React, { useState } from "react";
 
@@ -12,20 +13,29 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-        <div className="logo">//\\</div>
+        <div className="logo"></div>
         <div className={`menu ${isMenuOpen ? "open" : ""}`}>
-          <ul>
+          <ul className="display-menu">
             <li>
-              <a href="/">Home</a>
+              <a href="/">
+                <img
+                  src={logoUlleres}
+                  alt="logo-ulleres"
+                  className="logoUlleres"
+                ></img>
+              </a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/tienda">LA TIENDA</a>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <a href="/consulta">NUESTRA CONSULTA</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/productos">NUESTROS PRODUCTOS</a>
+            </li>
+            <li>
+              <a href="/contact">CONTACTO</a>
             </li>
           </ul>
         </div>

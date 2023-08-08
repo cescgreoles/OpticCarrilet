@@ -4,4 +4,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 9px;
+}
+
+@media only screen and (max-width: 768px) {
+  .infoNav {
+    display: none;
+  }
 }

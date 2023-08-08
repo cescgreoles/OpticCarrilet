@@ -1,24 +1,24 @@
 import "./App.scss";
-import Carousel from "./components/Carousel";
 
-import GifGafas from "./components/GifGafas";
-import InfoNav from "./components/InfoNav";
-import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+
+import ContactPage from "./pages/ContactPage";
+import Home from "./pages/Home";
+import Tienda from "./pages/Tienda";
+import NuestraConsulta from "./pages/NuestraConsulta";
+import NuestrosProductos from "./pages/NuestrosProductos";
+// import VideoPlayer from "./components/VideoPlayer";
 
 function App() {
   return (
     <div className="App">
-      <body>
-        <header>
-          <InfoNav />
-          <GifGafas />
-          <Navbar />
-        </header>
-        <main>
-          <Carousel />
-        </main>
-        <footer></footer>
-      </body>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="tienda" element={<Tienda />} />
+        <Route path="consulta" element={<NuestraConsulta />} />
+        <Route path="productos" element={<NuestrosProductos />} />
+        <Route path="contact" element={<ContactPage />} />
+      </Routes>
     </div>
   );
 }
