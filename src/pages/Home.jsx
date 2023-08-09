@@ -7,22 +7,26 @@ import Combination from "../components/Combination";
 import Footer from "../components/Footer";
 import QuienSomos from "../components/QuienSomos";
 import Secciones from "../components/Secciones";
-import VideoPlayer from "../components/VideoPlayer";
-import BannerSeccion from "../components/BannerSeccion";
+import Carousel from "../components/Carousel";
 
 const Home = () => {
+  const bannerUrls = [
+    "../assets/playa.jpeg",
+    "../assets/puestaSol.jpeg",
+    "../assets/playa.jpeg",
+  ];
+
   return (
     <div>
       <body>
         <header>
           <BurgerMenu />
           <InfoNav />
-
           <Navbar />
           <GifGafas />
+          <Carousel banners={bannerUrls} />
         </header>
-        {/* <VideoPlayer /> */}
-        <BannerSeccion />
+
         <QuienSomos />
         <Secciones />
         <Combination />
