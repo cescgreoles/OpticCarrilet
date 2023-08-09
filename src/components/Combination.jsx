@@ -1,18 +1,22 @@
 import React from "react";
 import "../styles/Combination.scss";
-import playa from "../assets/playa.jpeg";
+import logoPrada from "../assets/logoPrada.jpeg";
+import EA from "../assets/emporioArmani.jpeg";
+import CH from "../assets/CH.png";
+import logoTous from "../assets/logoTous.jpeg";
+import logoRayBan from "../assets/rayBan.jpeg";
+
+import police from "../assets/police.png";
 
 const Combination = () => {
   return (
     <div className="combo">
-      <p className="texto-centrado">
-        El párrafo es un concepto muy importante en cualquier texto. Se trata de
-        una unidad significativa que empieza con mayúscula y termina con un
-        punto y aparte. Presenta una idea principal organizada de manera
-        coherente y va acompañada de ideas secundarias que ayudan a precisar y
-        sustentar su contenido.
-      </p>
-      <img src={playa} alt="imagen1" className="imagen-1"></img>
+      <img src={logoPrada} alt="imagen1" className="imagen-1"></img>
+      <img src={EA} alt="imagen1" className="imagen-1"></img>
+      <img src={CH} alt="imagen1" className="imagen-1"></img>
+      <img src={logoTous} alt="imagen1" className="imagen-1"></img>
+      <img src={logoRayBan} alt="imagen1" className="imagen-1"></img>
+      <img src={police} alt="imagen1" className="imagen-1"></img>
     </div>
   );
 };

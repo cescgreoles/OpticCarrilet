@@ -29,11 +29,9 @@ const Navbar = () => {
               <a href="/tienda">LA TIENDA</a>
             </li>
             <li>
-              <a href="/consulta">NUESTRA CONSULTA</a>
+              <a href="/consulta">SERVICIOS</a>
             </li>
-            <li>
-              <a href="/productos">NUESTROS PRODUCTOS</a>
-            </li>
+
             <li>
               <a href="/contact">CONTACTO</a>
             </li>

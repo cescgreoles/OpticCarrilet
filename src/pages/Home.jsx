@@ -7,6 +7,8 @@ import Combination from "../components/Combination";
 import Footer from "../components/Footer";
 import QuienSomos from "../components/QuienSomos";
 import Secciones from "../components/Secciones";
+import VideoPlayer from "../components/VideoPlayer";
+import BannerSeccion from "../components/BannerSeccion";
 
 const Home = () => {
   return (
@@ -15,13 +17,15 @@ const Home = () => {
         <header>
           <BurgerMenu />
           <InfoNav />
+
           <Navbar />
           <GifGafas />
         </header>
         {/* <VideoPlayer /> */}
-        <Combination />
+        <BannerSeccion />
         <QuienSomos />
         <Secciones />
+        <Combination />
         <Footer />
       </body>
     </div>
